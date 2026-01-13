@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Biodata | E-Resume</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:url('BG.jpeg') no-repeat center fixed;
+    background-size:cover;
+}
+
+/* SIDEBAR – SAME AS HOME */
+.sidebar{
+    width:220px;
+    height:100vh;
+    position:fixed;
+    left:0;
+    top:0;
+    background:rgba(10,20,40,0.85);
+    backdrop-filter:blur(6px);
+    padding:25px 15px;
+    color:white;
+    animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+    from{opacity:0;transform:translateX(-20px);}
+    to{opacity:1;transform:translateX(0);}
+}
+
+.profile{
+    text-align:center;
+}
+
+.profile img{
+    width:100px;
+    border-radius:50%;
+    border:3px solid rgba(255,255,255,0.6);
+}
+
+.profile h3{
+    margin:10px 0 5px;
+}
+
+.time{
+    margin:20px 0;
+    font-size:13px;
+    text-align:center;
+    background:rgba(255,255,255,0.15);
+    padding:8px;
+    border-radius:20px;
+}
+
+/* NAV */
+.nav a{
+    display:block;
+    margin:14px 0;
+    color:#e0e8ff;
+    text-decoration:none;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.nav a:hover{
+    color:white;
+    transform:translateX(5px);
+}
+
+/* MAIN */
+.main{
+    margin-left:240px;
+    padding:70px;
+}
+
+.card{
+    background:rgba(255,255,255,0.95);
+    padding:30px;
+    border-radius:14px;
+    max-width:900px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    padding:12px;
+    border-bottom:1px solid #ccc;
+}
+
+th{
+    text-align:left;
+    color:#003366;
+}
+</style>
+
+<script>
+setInterval(()=>{
+document.getElementById("mytime").innerHTML =
+new Date().toLocaleTimeString('en-MY',{timeZone:'Asia/Kuala_Lumpur'});
+},1000);
+</script>
+</head>
+
+<body>
+
+<div class="sidebar">
+    <div class="profile">
+        <img src="PFP.jpeg">
+        <h3>Muhammad Nur Syazwan</h3>
+        <p>Diploma in Information Management</p>
+    </div>
+
+    <div class="time">MY Time: <span id="mytime"></span></div>
+
+    <div class="nav">
+        <a href="file:///C:/Users/User/Desktop/test%202/HOME2.html">HOME</a>
+        <a href="file:///C:/Users/User/Desktop/test%202/BIODATA2.html">BIODATA</a>
+        <a href="file:///C:/Users/User/Desktop/test%202/QUALIFICATION2.html">QUALIFICATION</a>
+        <a href="file:///C:/Users/User/Desktop/test%202/GALLERY2.html">GALLERY</a>
+        <a href="file:///C:/Users/User/Desktop/test%202/VIDEO2.html">VIDEOS</a>
+    </div>
+</div>
+
+<div class="main">
+<div class="card">
+<h1>BIODATA</h1>
+
+<img src="PFP.jpeg" width="140"><br><br>
+
+<table>
+<tr><th>Name</th><td>Muhammad Nur Syazwan Bin Md Nasir</td></tr>
+<tr><th>Date of Birth</th><td>16 July 2004</td></tr>
+<tr><th>Address</th><td>No. 3, Jalan Rajawali, Larkin Jaya, 80350 Johor Bahru, Johor</td></tr>
+<tr><th>Student ID</th><td>2023478526</td></tr>
+<tr><th>Education</th><td>Diploma in Information Management</td></tr>
+<tr><th>Email</th><td>nursyazwan698@gmail.com</td></tr>
+<tr><th>Phone</th><td>+60 11-5622 4182</td></tr>
+</table>
+</div>
+</div>
+
+</body>
+</html>

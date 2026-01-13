@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Qualification | E-Resume</title>
+
+<style>
+body{margin:0;font-family:Arial;background:url('BG.jpeg') fixed;background-size:cover;}
+/* SAME SIDEBAR */
+.sidebar{width:220px;height:100vh;position:fixed;background:rgba(10,20,40,0.85);backdrop-filter:blur(6px);padding:25px;color:white;animation:fadeIn 1s ease;}
+@keyframes fadeIn{from{opacity:0;transform:translateX(-20px);}to{opacity:1;transform:translateX(0);}}
+.profile{text-align:center;}
+.profile img{width:100px;border-radius:50%;border:3px solid rgba(255,255,255,0.6);}
+.time{margin:20px 0;font-size:13px;text-align:center;background:rgba(255,255,255,0.15);padding:8px;border-radius:20px;}
+.nav a{display:block;margin:14px 0;color:#e0e8ff;text-decoration:none;font-weight:bold;}
+.nav a:hover{color:white;transform:translateX(5px);}
+.main{margin-left:240px;padding:70px;}
+.section{background:rgba(255,255,255,0.95);padding:30px;border-radius:14px;margin-bottom:30px;max-width:900px;}
+</style>
+
+<script>
+setInterval(()=>{mytime.innerHTML=new Date().toLocaleTimeString('en-MY',{timeZone:'Asia/Kuala_Lumpur'});},1000);
+</script>
+</head>
+
+<body>
+
+<div class="sidebar">
+<div class="profile">
+<img src="PFP.jpeg">
+<h3>Muhammad Nur Syazwan</h3>
+<p>Diploma in Information Management</p>
+</div>
+<div class="time">MY Time: <span id="mytime"></span></div>
+<div class="nav">
+<a href="file:///C:/Users/User/Desktop/test%202/HOME2.html">HOME</a>
+<a href="file:///C:/Users/User/Desktop/test%202/BIODATA2.html">BIODATA</a>
+<a href="file:///C:/Users/User/Desktop/test%202/QUALIFICATION2.html">QUALIFICATION</a>
+<a href="file:///C:/Users/User/Desktop/test%202/GALLERY2.html">GALLERY</a>
+<a href="file:///C:/Users/User/Desktop/test%202/VIDEO2.html">VIDEOS</a>
+</div>
+</div>
+
+<div class="main">
+<div class="section">
+<h2>Profile Summary</h2>
+<p>I am a <strong>Diploma graduate in Information Science</strong>, with a strong foundation in data and records management. Possess solid computer and technical skills, with basic knowledge of C++ and HTML, as well as proficiency in Canva, CapCut, and Microsoft PowerPoint. I am a motivated individual prepared for a professional working environment.</p>
+</div>
+
+<div class="section">
+<h2>Language Proficiency</h2>
+<ul>
+<li><strong>Malay</strong> – Written & Oral</li>
+<li><strong>English</strong> – Written & Oral</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Work Experience</h2>
+<p><strong>Food & Beverage Crew / Cashier – MekLokal</strong><br>TMIYC, Johor Bahru</p>
+<p><strong>Food & Beverage Crew – Keria 3</strong><br>Bandar Baru Uda, Johor Bahru</p>
+</div>
+</div>
+
+</body>
+</html>

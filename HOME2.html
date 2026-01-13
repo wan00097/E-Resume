@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home | E-Resume</title>
+    <style>
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+            background:url('BG.jpeg') no-repeat center fixed;
+            background-size:cover;
+        }
+
+        /* SIDEBAR */
+        .sidebar{
+            width:220px;
+            height:100vh;
+            position:fixed;
+            left:0;
+            top:0;
+            background:rgba(10,20,40,0.85);
+            backdrop-filter:blur(6px);
+            padding:25px 15px;
+            color:white;
+            animation:fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn{
+            from{opacity:0;transform:translateX(-20px);}
+            to{opacity:1;transform:translateX(0);}
+        }
+
+        .profile{
+            text-align:center;
+        }
+
+        .profile img{
+            width:100px;
+            border-radius:50%;
+            border:3px solid rgba(255,255,255,0.6);
+        }
+
+        .profile h3{
+            margin:10px 0 5px;
+        }
+
+        .time{
+            margin:20px 0;
+            font-size:13px;
+            text-align:center;
+            background:rgba(255,255,255,0.15);
+            padding:8px;
+            border-radius:20px;
+        }
+
+        /* NAV */
+        .nav a{
+            display:block;
+            margin:14px 0;
+            color:#e0e8ff;
+            text-decoration:none;
+            font-weight:bold;
+            letter-spacing:1px;
+        }
+
+        .nav a:hover{
+            color:white;
+            transform:translateX(5px);
+        }
+
+        /* MAIN */
+        .main{
+            margin-left:240px;
+            padding:90px;
+            color: black; /* Changed from white to black */
+        }
+
+        .hero h1{
+            font-size:60px;
+            color: black; /* ensure hero title is black */
+        }
+
+        .hero h2{
+            font-weight:normal;
+            color: black; /* ensure hero subtitle is black */
+        }
+
+        footer{
+            margin-top:100px;
+            font-size:14px;
+            color: black; /* ensure footer text is black */
+        }
+    </style>
+
+    <script>
+        setInterval(()=>{
+            document.getElementById("mytime").innerHTML = new Date().toLocaleTimeString('en-MY',{timeZone:'Asia/Kuala_Lumpur'});
+        },1000);
+    </script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="profile">
+            <img src="PFP.jpeg">
+            <h3>Muhammad Nur Syazwan</h3>
+            <p>Diploma in Information Management</p>
+        </div>
+
+        <div class="time">MY Time: <span id="mytime"></span></div>
+
+        <div class="nav">
+            <a href="file:///C:/Users/User/Desktop/test%202/HOME2.html">HOME</a>
+            <a href="file:///C:/Users/User/Desktop/test%202/BIODATA2.html">BIODATA</a>
+            <a href="file:///C:/Users/User/Desktop/test%202/QUALIFICATION2.html">QUALIFICATION</a>
+            <a href="file:///C:/Users/User/Desktop/test%202/GALLERY2.html">GALLERY</a>
+            <a href="file:///C:/Users/User/Desktop/test%202/VIDEO2.html">VIDEOS</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="hero">
+            <h1>E-RESUME</h1>
+            <h2>MUHAMMAD NUR SYAZWAN BIN MD NASIR</h2>
+        </div>
+
+        <footer>
+            © 2025 Muhammad Nur Syazwan | UiTM IMD318
+        </footer>
+    </div>
+</body>
+</html>
